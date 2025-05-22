@@ -1,2 +1,2 @@
 # jademeisterxo.github.io
-repository for jadeyland archive
+this is the repository for the jadeyland website
