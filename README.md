@@ -1,2 +1,3 @@
 # jademeisterxo.github.io
-repository for jadeyland archive
+my personal website
+
