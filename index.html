@@ -1,41 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
         <title>jadeyland</title> 
+        <link rel="stylesheet" href="style.css">
         <link rel="icon" type="image/x-icon" href="/Users/jadey/Downloads/favicon.ico">
-    </head>
-    <body>
-        <style>
-            body{
-                background-image: url('/Users/jadey/Downloads/8-bit-bubble-clouds.png');
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: fixed;
-                
-            }img{
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            } 
+        
 
-        </style>
-        
-        <h1 style="text-align:center; text-shadow: 5px 5px 10px gray; color:white">jadeyland</h1>
-        <h1 style="text-align:center; text-shadow: 5px 5px 10px gray; color:white">-------------------------------------------------------------------------------------------------------------------------</h1>
-        <h2 style="text-align:center; color:white; text-shadow: 5px 5px 10px gray">hello! come into my world</h2>
-        <img src="/Users/jadey/Downloads/me in nola.JPG" alt="thisIsMe" class="center" style="width: 257px; height: 326px;">
-        <h3 style="text-align: center; color:white; text-shadow: 5px 5px 10px gray;"> 
-        my name is jade. i'm a second year student studying computer science at wentworth institute of technology. 
-        beyond building software, i love lifting weights, playing video games, music, fashion and reading.
-        </h3>
-        
+    </head>  
+<body>
+   <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/Users/jadey/Downloads/jadeyland (6).png" class="logo">
+                <ul>
+                    <li><a href="#about">about me...</a></li>
+                    <li><a href="https://www.linkedin.com/in/jadeyland">linkedin</a></li>
+                    <li><a href="https://github.com/jademeisterxo">github</a></li>
+                    <li><a href="mailto:hornej1@wit.edu">get in touch w me!</a></li>
+                </ul>
+            </nav>
+                <div class="header-text">
+                    <h1>hi! my name is jade.<br>i'm a cs student at <a href="https://wit.edu/">wentworth institute of technology.</a></h1>
+                </div>
+        </div>
+   </div>
+ 
+        <!---------------------about------------------------------------------------------->
+        <div id="about"> 
+            <div class="container">
+                <div class="row">
+                   <div class="about-col-1">
+                        <img src="/Users/jadey/Downloads/me in nola.JPG">
+                        <div class="subtitle">
+                            <subtitle>this is me in nola... super fun time!</subtitle>
+                        </div>
+                   </div>
+                   <div class="about-col-2">
+                        <h1 class="sub-title">about me...</h1>
+                        <p> i'm 19 years old. i'm from pensacola, fl and currently based in boston, ma.
+                            i love learning and building cool stuff! 
+                            beyond software, i enjoy exercising, all things music, video games and reading. 
+                            be sure to check out what i'm working on and especially <a href="https://open.spotify.com/playlist/6GfWNo9fb72Ceo0RTVrzf2?si=ced07d79515a4fde">what i'm bumping while i do it :P</a>
+                        </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">skills</p>
+                        <p class="tab-links"onclick="openTab('projects')" >projects</p>
+                        <p class="tab-links"onclick="openTab('education')">education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UIxUX</span><br>designing web and app interfaces</li>
+                            <li><span>webdev</span><br>developing web apps</li>
+                            <li><span>appdev</span><br>developing android and ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>jul 2025</span><br>this website!</li>
+                            <li><span>jan 2025 - apr 2025</span><br>tamagotchi game (class project)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>sep 2024 - present</span><br>computer science bs at <link>wentworth institute of technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openTab(tabName) {
+            const tabs = document.querySelectorAll('.tab-contents');
+            const links = document.querySelectorAll('.tab-links');
+
+            tabs.forEach(tab => {
+                tab.classList.remove('active-tab'); // Remove active class from all tabs
+            });
+
+            links.forEach(link => {
+                link.classList.remove('active-link'); // Remove active class from all links
+            });
+
+            document.getElementById(tabName).classList.add('active-tab'); // Add active class to the clicked tab
+            document.querySelector(`.tab-links[onclick="openTab('${tabName}')"]`).classList.add('active-link'); // Add active class to the clicked link
+        }
+     
+    </script>
+<!------------------------services--------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"> still curious? bored? here's what i have for you (coming soon...)</h1>
+        <div class="services-list">
+            <div>
+                <img src="/Users/jadey/Downloads/snoopy cupid 2.png" class="icon">
+                <h2>fun facts about me</h2>
+                <p>click here</p>
     
-    </body>
-    <footer style="text-align: center;">
-        <p style="text-shadow:5px 5px 10px gray; color:white"> © [2025] all rights reserved by jade horne</p>
-    </footer> 
+            </div>
+            <div>
+                <img src="/Users/jadey/Downloads/snoopy cupid 2.png" class="icon">
+                <h2>this month's text-based adventure game</h2>
+                <p>for august, i made a buffalo hunting simulator! come play </p>
 
+            </div>
+            <div>
+                <img src="/Users/jadey/Downloads/snoopy cupid 2.png" class="icon">
+                <h2>looking for more song recs? my dj will get you right</h2>
+                <p>"PLEASE get me right dj..."</p>
+            </div>
+        </div>
+    </div>
+   
+
+</body>
 </html>
